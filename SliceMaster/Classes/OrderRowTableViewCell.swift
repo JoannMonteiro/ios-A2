@@ -11,8 +11,7 @@ class OrderRowTableViewCell: UITableViewCell {
 
     // hook up in storyboard prototype cell
         @IBOutlet var imgAvatar: UIImageView!
-        @IBOutlet var lblLeft: UILabel!
-        @IBOutlet var lblRight: UILabel!
+        @IBOutlet var lbl: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

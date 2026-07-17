@@ -56,10 +56,9 @@ class OrderHistoryViewController: UIViewController, UITableViewDataSource, UITab
                 cell.imgAvatar.image = nil
             }
             
-            cell.lblRight.text = record.address ?? ""
-            
             let sizeText = sizeLabel(for: record.size ?? 0)
-            cell.lblLeft.text = "\(record.deliveryDate ?? "") • \(sizeText)"
+                cell.lbl.text = "\(record.address ?? "") • \(record.deliveryDate ?? "") • \(sizeText)"
+                
             
             return cell
         }

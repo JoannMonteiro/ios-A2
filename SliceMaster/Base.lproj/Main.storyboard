@@ -90,39 +90,33 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="VrF-59-ngd">
-                                                    <rect key="frame" x="20" y="11" width="76" height="68"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dGa-9L-oPE">
+                                                    <rect key="frame" x="40" y="10" width="146.66666666666666" height="79"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvl-hz-fnL">
-                                                    <rect key="frame" x="111" y="26" width="116" height="38"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ux0-IC-CkV">
-                                                    <rect key="frame" x="242" y="26" width="116" height="38"/>
+                                                    <rect key="frame" x="206.66666666666663" y="39.333333333333336" width="146.33333333333337" height="20.333333333333336"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="zvl-hz-fnL" secondAttribute="bottom" constant="15" id="0x2-Mz-4q4"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="ux0-IC-CkV" secondAttribute="bottom" constant="15" id="LFt-Kj-TqN"/>
-                                                <constraint firstItem="ux0-IC-CkV" firstAttribute="top" secondItem="DaA-bp-r26" secondAttribute="topMargin" constant="15" id="Lpq-zj-tNK"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ux0-IC-CkV" secondAttribute="trailing" constant="15" id="N8Z-sv-XXo"/>
-                                                <constraint firstItem="ux0-IC-CkV" firstAttribute="leading" secondItem="zvl-hz-fnL" secondAttribute="trailing" constant="15" id="Nrb-zB-tyt"/>
-                                                <constraint firstItem="ux0-IC-CkV" firstAttribute="width" secondItem="zvl-hz-fnL" secondAttribute="width" id="Vsf-T4-AmF"/>
-                                                <constraint firstItem="zvl-hz-fnL" firstAttribute="top" secondItem="DaA-bp-r26" secondAttribute="topMargin" constant="15" id="b68-fO-nGk"/>
-                                                <constraint firstItem="ux0-IC-CkV" firstAttribute="leading" secondItem="zvl-hz-fnL" secondAttribute="trailing" constant="15" id="cVZ-Rg-S4X"/>
-                                                <constraint firstItem="zvl-hz-fnL" firstAttribute="leading" secondItem="VrF-59-ngd" secondAttribute="trailing" constant="15" id="cZi-bW-W15"/>
+                                                <constraint firstItem="dGa-9L-oPE" firstAttribute="top" secondItem="DaA-bp-r26" secondAttribute="top" constant="10" id="BEd-pA-oph"/>
+                                                <constraint firstItem="ux0-IC-CkV" firstAttribute="leading" secondItem="dGa-9L-oPE" secondAttribute="trailing" constant="20" id="Bxe-uX-bNw"/>
+                                                <constraint firstItem="ux0-IC-CkV" firstAttribute="centerY" secondItem="dGa-9L-oPE" secondAttribute="centerY" id="TjG-Oh-h91"/>
+                                                <constraint firstItem="ux0-IC-CkV" firstAttribute="width" secondItem="dGa-9L-oPE" secondAttribute="width" id="j0D-LM-PNl"/>
+                                                <constraint firstItem="dGa-9L-oPE" firstAttribute="bottom" secondItem="DaA-bp-r26" secondAttribute="bottomMargin" constant="10" id="m4d-iv-agB"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ux0-IC-CkV" secondAttribute="trailing" constant="20" id="ttc-ig-qb7"/>
+                                                <constraint firstItem="dGa-9L-oPE" firstAttribute="leading" secondItem="DaA-bp-r26" secondAttribute="leadingMargin" constant="20" id="yBs-fa-6TK"/>
                                             </constraints>
+                                            <connections>
+                                                <outlet property="imgAvatar" destination="dGa-9L-oPE" id="Y6t-Ul-w7W"/>
+                                                <outlet property="lbl" destination="ux0-IC-CkV" id="wzV-BN-Jv0"/>
+                                            </connections>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="imgAvatar" destination="VrF-59-ngd" id="d1h-Gp-m6p"/>
-                                            <outlet property="lblLeft" destination="zvl-hz-fnL" id="Veh-R1-WY4"/>
-                                            <outlet property="lblRight" destination="ux0-IC-CkV" id="Eqa-AS-9P5"/>
+                                            <outlet property="imgAvatar" destination="dGa-9L-oPE" id="KCq-1Z-qoS"/>
+                                            <outlet property="lbl" destination="ux0-IC-CkV" id="Efy-YP-6LS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

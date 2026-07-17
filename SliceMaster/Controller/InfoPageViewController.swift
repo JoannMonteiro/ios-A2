@@ -6,15 +6,43 @@
 //
 
 import UIKit
+import WebKit
 
-class InfoPageViewController: UIViewController {
+class InfoPageViewController: UIViewController, WKNavigationDelegate {
+    
+    // MARK: - Outlets
+    
+    @IBOutlet var pageView: WKWebView!
+    @IBOutlet var spinner: UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // set self as the navigation delegate so we get load-start and load-finish callbacks
+                pageView.navigationDelegate = self
+                
+                // build the URL and load it
+                if let siteURL = URL(string: "https://www.dominos.ca") {
+                    let request = URLRequest(url: siteURL)
+                    pageView.load(request)
+                }
     }
-    
+    // MARK: - WKNavigationDelegate — page starts loading
+        
+        func webView(_ webView: WKWebView,
+                     didStartProvisionalNavigation navigation: WKNavigation!) {
+            spinner.isHidden = false
+            spinner.startAnimating()
+        }
+        
+        // MARK: - WKNavigationDelegate — page finished loading
+        
+        func webView(_ webView: WKWebView,
+                     didFinish navigation: WKNavigation!) {
+            spinner.stopAnimating()
+            spinner.isHidden = true
+        }       
 
     /*
     // MARK: - Navigation

@@ -37,11 +37,11 @@ class CreateOrderViewController: UIViewController {
         // buttons are tagged 1, 2, 3 in storyboard
         switch sender.tag {
         case 1:
-            pickedAvatar = "chefA"
+            pickedAvatar = "chef1"
         case 2:
-            pickedAvatar = "chefB"
+            pickedAvatar = "chef2"
         case 3:
-            pickedAvatar = "chefC"
+            pickedAvatar = "chef3"
         default:
             pickedAvatar = ""
         }

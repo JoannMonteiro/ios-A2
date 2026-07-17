@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B62A0B143009E359007EC0AF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62A0B133009E359007EC0AF /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B62A0AE330098937007EC0AF /* SliceMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliceMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62A0B133009E359007EC0AF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B62A0B143009E359007EC0AF /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				B62A0AE530098937007EC0AF /* SliceMaster */,
+				B62A0B123009E359007EC0AF /* Frameworks */,
 				B62A0AE430098937007EC0AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +63,14 @@
 				B62A0AE330098937007EC0AF /* SliceMaster.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B62A0B123009E359007EC0AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B62A0B133009E359007EC0AF /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

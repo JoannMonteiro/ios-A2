@@ -24,8 +24,8 @@ class CreateOrderViewController: UIViewController {
         @IBOutlet var swSpinach: UISwitch!
         @IBOutlet var swJalapeno: UISwitch!
         
-    // holds the currently chosen avatar name — defaults to none
-        var pickedAvatar: String = ""
+    // holds the currently chosen avatar name — defaults to chef1
+    var pickedAvatar: String = "chef1"
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,6 +34,7 @@ class CreateOrderViewController: UIViewController {
     
     
     @IBAction func avatarTapped(_ sender: UIButton) {
+        print("avatarTapped fired! tag = \(sender.tag)")
         // buttons are tagged 1, 2, 3 in storyboard
         switch sender.tag {
         case 1:
@@ -43,7 +44,7 @@ class CreateOrderViewController: UIViewController {
         case 3:
             pickedAvatar = "chef3"
         default:
-            pickedAvatar = ""
+            pickedAvatar = "chef1"
         }
         
     }
@@ -110,7 +111,7 @@ class CreateOrderViewController: UIViewController {
             self.swOlives.isOn = false
             self.swSpinach.isOn = false
             self.swJalapeno.isOn = false
-            self.pickedAvatar = ""
+            self.pickedAvatar = "chef1"
         }
         alert.addAction(okBtn)
         present(alert, animated: true)

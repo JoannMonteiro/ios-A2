@@ -16,36 +16,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzd-8n-ePu">
-                                <rect key="frame" x="110" y="230" width="107" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzd-8n-ePu">
+                                <rect key="frame" x="25" y="262" width="343" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="New Order"/>
                                 <connections>
                                     <segue destination="yOS-Bt-xDo" kind="show" id="lCy-oI-T6f"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YN7-yd-AOa">
-                                <rect key="frame" x="105" y="286" width="127" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Order History"/>
-                                <connections>
-                                    <segue destination="tIm-n0-klr" kind="show" id="HYS-VW-ZV8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cu5-Nt-3Ca">
-                                <rect key="frame" x="129" y="362" width="87" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cu5-Nt-3Ca">
+                                <rect key="frame" x="25" y="382" width="343" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Settings"/>
                                 <connections>
                                     <segue destination="cG1-qj-64e" kind="show" id="Gnt-cG-0co"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YN7-yd-AOa">
+                                <rect key="frame" x="25" y="322" width="343" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Order History"/>
+                                <connections>
+                                    <segue destination="tIm-n0-klr" kind="show" id="HYS-VW-ZV8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cu5-Nt-3Ca" firstAttribute="top" secondItem="YN7-yd-AOa" secondAttribute="bottom" constant="25" id="1bK-6d-SOz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cu5-Nt-3Ca" secondAttribute="trailing" constant="25" id="7ul-Lh-nQT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YN7-yd-AOa" secondAttribute="trailing" constant="25" id="Al8-dG-cfi"/>
+                            <constraint firstItem="YN7-yd-AOa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="BXA-CX-oNM"/>
+                            <constraint firstItem="fzd-8n-ePu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Qpg-a7-cmZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fzd-8n-ePu" secondAttribute="trailing" constant="25" id="Swj-hn-gv8"/>
+                            <constraint firstItem="fzd-8n-ePu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="cqd-cN-jz4"/>
+                            <constraint firstItem="cu5-Nt-3Ca" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="dZo-Ud-CJr"/>
+                            <constraint firstItem="YN7-yd-AOa" firstAttribute="top" secondItem="fzd-8n-ePu" secondAttribute="bottom" constant="25" id="e3K-nI-iFi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="SliceMaster" id="N3A-UT-CAs"/>
                 </viewController>
@@ -90,24 +98,26 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dGa-9L-oPE">
-                                                    <rect key="frame" x="40" y="10" width="146.66666666666666" height="79"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ux0-IC-CkV">
-                                                    <rect key="frame" x="206.66666666666663" y="39.333333333333336" width="146.33333333333337" height="20.333333333333336"/>
+                                                    <rect key="frame" x="110" y="35" width="243" height="20.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dGa-9L-oPE">
+                                                    <rect key="frame" x="20" y="5" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="0wZ-Dx-Ftf"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="dGa-9L-oPE" firstAttribute="top" secondItem="DaA-bp-r26" secondAttribute="top" constant="10" id="BEd-pA-oph"/>
-                                                <constraint firstItem="ux0-IC-CkV" firstAttribute="leading" secondItem="dGa-9L-oPE" secondAttribute="trailing" constant="20" id="Bxe-uX-bNw"/>
-                                                <constraint firstItem="ux0-IC-CkV" firstAttribute="centerY" secondItem="dGa-9L-oPE" secondAttribute="centerY" id="TjG-Oh-h91"/>
-                                                <constraint firstItem="ux0-IC-CkV" firstAttribute="width" secondItem="dGa-9L-oPE" secondAttribute="width" id="j0D-LM-PNl"/>
-                                                <constraint firstItem="dGa-9L-oPE" firstAttribute="bottom" secondItem="DaA-bp-r26" secondAttribute="bottomMargin" constant="10" id="m4d-iv-agB"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ux0-IC-CkV" secondAttribute="trailing" constant="20" id="ttc-ig-qb7"/>
-                                                <constraint firstItem="dGa-9L-oPE" firstAttribute="leading" secondItem="DaA-bp-r26" secondAttribute="leadingMargin" constant="20" id="yBs-fa-6TK"/>
+                                                <constraint firstAttribute="bottom" secondItem="dGa-9L-oPE" secondAttribute="bottom" constant="5" id="0Iv-ip-MDn"/>
+                                                <constraint firstItem="ux0-IC-CkV" firstAttribute="leading" secondItem="dGa-9L-oPE" secondAttribute="trailing" constant="10" id="Tuk-Kt-Ega"/>
+                                                <constraint firstItem="ux0-IC-CkV" firstAttribute="centerY" secondItem="DaA-bp-r26" secondAttribute="centerY" id="cr9-lg-yae"/>
+                                                <constraint firstItem="dGa-9L-oPE" firstAttribute="top" secondItem="DaA-bp-r26" secondAttribute="top" constant="5" id="rsm-el-LYK"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ux0-IC-CkV" secondAttribute="trailing" constant="20" id="wIJ-8E-lfu"/>
+                                                <constraint firstItem="dGa-9L-oPE" firstAttribute="leading" secondItem="DaA-bp-r26" secondAttribute="leading" constant="20" id="zJj-vP-Wf6"/>
                                             </constraints>
                                             <connections>
                                                 <outlet property="imgAvatar" destination="dGa-9L-oPE" id="Y6t-Ul-w7W"/>
